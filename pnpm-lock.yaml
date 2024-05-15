@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^0.1.29
     version: 0.1.29(@types/node@20.12.7)
   svag-jest:
-    specifier: ^0.1.30
-    version: 0.1.30(@babel/core@7.24.4)(@types/node@20.12.7)(jest@30.0.0-alpha.3)
+    specifier: ^0.1.31
+    version: 0.1.31(@babel/core@7.24.4)(@types/node@20.12.7)(jest@30.0.0-alpha.3)
   svag-lint:
     specifier: ^0.1.52
     version: 0.1.52(@types/node@20.12.7)(prettier@3.2.5)
@@ -3492,8 +3492,8 @@ packages:
       - babel-plugin-macros
     dev: true
 
-  /svag-jest@0.1.30(@babel/core@7.24.4)(@types/node@20.12.7)(jest@30.0.0-alpha.3):
-    resolution: {integrity: sha512-rqT+klBLw3OJVBMZnPjHr3GV5gjy6dG4NOwZ3kP9kNYAFh9VZaNy1hNuajbdg5NjRGVNCa7fj5HKca30K9YVNw==}
+  /svag-jest@0.1.31(@babel/core@7.24.4)(@types/node@20.12.7)(jest@30.0.0-alpha.3):
+    resolution: {integrity: sha512-v1SegHt1yD4gc3uDoWGsX0NoVUgezP6S1K+/twn+gk3Sv51zHgZJUbKIdPG1V+rGv0sgGB/Dn1Z4Kz7yOW1ZBQ==}
     hasBin: true
     dependencies:
       dedent: 1.5.3
