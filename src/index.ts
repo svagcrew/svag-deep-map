@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import cloneDeep from 'lodash/cloneDeep'
-import isArray from 'lodash/isArray'
-import isObject from 'lodash/isObject'
+import cloneDeep from 'lodash/cloneDeep.js'
+import isArray from 'lodash/isArray.js'
+import isObject from 'lodash/isObject.js'
 
 type ReplaceFn = ({ path, key, value }: { path: string; key: string; value: Value }) => Value
 type Value = Object | number | string | boolean | null | undefined | Function | Symbol | any[]
