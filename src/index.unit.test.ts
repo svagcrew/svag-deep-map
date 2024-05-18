@@ -1,5 +1,5 @@
-import _ from 'lodash'
 import { deepMap } from './index'
+import _ from 'lodash'
 
 describe('deepMap', () => {
   it('should map object', () => {
@@ -49,7 +49,7 @@ describe('deepMap', () => {
         return 'me was an object'
       }
       if (_.isString(value) || _.isNumber(value)) {
-        return `${value}` + 'XXX'
+        return `${value}XXX`
       }
       return value
     })

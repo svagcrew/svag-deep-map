@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
 import cloneDeep from 'lodash/cloneDeep.js'
 import isArray from 'lodash/isArray.js'
 import isObject from 'lodash/isObject.js'
