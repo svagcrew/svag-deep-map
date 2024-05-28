@@ -38,21 +38,27 @@ describe('deepMap', () => {
     }
     input.objectRecursive = input
 
-    const output = deepMap(input, ({ key, path, value }) => {
-      if (path === 'object.c1.0') {
-        return 'my path is object.c1.0'
+    const output = deepMap(
+      input,
+      ({ key, path, value }) => {
+        if (path === 'object.c1.0') {
+          return 'my path is object.c1.0'
+        }
+        if (key === 'u') {
+          return 'my key is u'
+        }
+        if (key === 's1') {
+          return 'me was an object'
+        }
+        if (_.isString(value) || _.isNumber(value)) {
+          return `${value}XXX`
+        }
+        return value
+      },
+      {
+        maxSeenCount: 1,
       }
-      if (key === 'u') {
-        return 'my key is u'
-      }
-      if (key === 's1') {
-        return 'me was an object'
-      }
-      if (_.isString(value) || _.isNumber(value)) {
-        return `${value}XXX`
-      }
-      return value
-    })
+    )
     expect(output).toMatchInlineSnapshot(`
       {
         "object": {
