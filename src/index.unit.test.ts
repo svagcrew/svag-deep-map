@@ -1,4 +1,4 @@
-import { deepMap } from './index'
+import { deepMap } from '@/index.js'
 import _ from 'lodash'
 
 describe('deepMap', () => {
